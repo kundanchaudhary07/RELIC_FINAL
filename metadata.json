@@ -1,0 +1,10 @@
+{
+  "name": "Remix  RANAv4-GARUDA — Cyber Eagle",
+  "description": "Risk Evaluation & Location Intelligence for Cashpoints (RELIC) platform combining transaction analysis, predictive modeling, and ATM spatial intelligence.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
