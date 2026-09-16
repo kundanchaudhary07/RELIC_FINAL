@@ -6,8 +6,7 @@ import React, {
 } from 'react';
 import { UserProfile, UserRole } from '../types';
 
-const API_BASE_URL =
-  import.meta.env.VITE_API_URL || 'https://relic-vpzf.onrender.com';
+const API_BASE_URL = '/api';
 
 interface RegisterUserData {
   name: string;
