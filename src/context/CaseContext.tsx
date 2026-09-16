@@ -13,8 +13,7 @@ import {
   UserRole,
 } from "../types";
 
-const API_BASE_URL =
-  import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
+const API_BASE_URL = "/api";
 
 const COMPLAINTS_ENDPOINT = `${API_BASE_URL}/complaints`;
 
@@ -510,16 +509,12 @@ export const CaseProvider: React.FC<{
     }, []);
 
   /*
-   * We intentionally do NOT call
-   * fetchCasesFromBackend() here.
-   *
-   * The current GET /complaints endpoint is
-   * failing, while POST /complaints works.
-   *
-   * Automatically calling GET on startup would
-   * create unnecessary errors and can interfere
-   * with the complaint flow.
+   * Load complaints from the backend when the
+   * application starts.
    */
+  useEffect(() => {
+    fetchCasesFromBackend();
+  }, [fetchCasesFromBackend]);
 
   const selectCaseById = (
     id: string
