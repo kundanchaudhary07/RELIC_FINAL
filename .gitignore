@@ -1,0 +1,113 @@
+# ==========================================
+# RELIC Frontend - Git Ignore
+# ==========================================
+
+# Dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# Build / production output
+dist/
+build/
+.vite/
+
+# Environment / secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+bun-debug.log*
+bun-error.log*
+
+# Runtime files
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage
+coverage/
+.nyc_output/
+
+# Cache
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+*.tsbuildinfo
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+
+# Linux
+.directory
+
+# VS Code
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Cursor
+.cursor/
+
+# JetBrains
+.idea/
+*.iml
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Test artifacts
+playwright-report/
+test-results/
+blob-report/
+
+# Local development files
+*.local
+
+# Firebase / deployment local files
+.firebase/
+firebase-debug.log
+firebaserc.local
+
+# Vercel
+.vercel/
+
+# Netlify
+.netlify/
+
+# Temporary exports
+*.zip
+*.tar
+*.gz
+
+# Python files (if accidentally created in frontend)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Generated files
+*.bak
+*.orig
